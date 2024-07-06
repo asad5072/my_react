@@ -1,4 +1,4 @@
 export default function Actor({name}){
-    return <h2>Name: {name}</h2>
+    return <h2>Actor Name: {name}</h2>
     
 }
