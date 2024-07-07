@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-// import Todo from './Todos'
+import Todo from './Todos'
 import Actor from './Actor'
 import BookStore from './BookStore'
 
@@ -22,23 +22,23 @@ function App() {
   return (
     <>  
       <BookStore books={books}></BookStore>
-      <Actor name={'Ronaldo'}></Actor>
+      {/* <Actor name={'Ronaldo'}></Actor> */}
       {
-        actors.map(actor => <Actor name={actor }></Actor>)
+        actors.map(actor => <Actor name={actor}></Actor>)
       }
 
       <h1>Vite + React</h1>
       <Student name="Asad" id='23'></Student>
 
 
-      {/* <Todo 
+      <Todo 
         task='Learn React'
         isDone = {false}
         ></Todo>
       <Todo 
         task='Learn Javascript'
         isDone= {true}
-      ></Todo> */}
+      ></Todo>
 
     </>
   )

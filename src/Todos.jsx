@@ -53,3 +53,13 @@
 //         <h2>{task} {isDone || ': Do it'}</h2>
 //     )
 // }
+
+export default function Todo({task, isDone}){
+    let listItem;
+    if(isDone){
+        listItem = <h2>{task} : Finished</h2>
+    }else{
+        listItem = <h2>{task} : Work going on.</h2>
+    }
+    return listItem;
+}
